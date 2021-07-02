@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block head %}
+{% endblock %}
+{% block title %}
+    Opio en las nubes - Music
+{% endblock %}
+
+{% block body %}
+<img class="texto1" src="{{ url_for('static', filename='images/laPLAYLIST1.jpg') }}">
+<img class="texto1" src="{{ url_for('static', filename='images/laPLAYLIST2.jpg') }}">
+<iframe class="texto1" style="align-self: center;" src="https://open.spotify.com/embed/playlist/3wwJupMnpCPew9b7q0KZ1a" width="1050" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+{% endblock %}

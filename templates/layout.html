@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style/styles.css')}}">
+        {% block head %}
+        {% endblock %}
+    </head>
+   
+    <body> <div class="grid-container">
+            <div class="a">
+                
+                
+                <img class="titulo" src="{{url_for('static',filename='images/TITULO.jpg')}}">
+            </div>
+            <div class="b"> 
+                <a href="{{ url_for('index') }}">               
+                <img class="home" src="{{url_for('static',filename='images/home.jpg')}}">
+                </a>
+                <a href="{{ url_for('imagenes')}}">               
+                <img class="imagenes" src="{{url_for('static',filename='images/imagenes.jpg')}}">
+                </a>
+                <a href="{{ url_for('textos') }}">
+                <img class="textos" src="{{url_for('static',filename='images/textos.jpg')}}">
+                </a>
+                <a href="{{ url_for('gifs') }}">
+                <img class="gifs" src="{{url_for('static',filename='images/gifs.jpg')}}">
+                </a>
+                <a href="{{ url_for('autor')}}">
+                <img class="autor" src="{{url_for('static',filename='images/autor.jpg')}}"> 
+                </a> 
+                <a href="{{url_for('music')}}">
+                <img class="musica" src="{{url_for('static',filename='images/musica.jpg')}}">
+                </a>
+                <a href="{{ url_for('videos') }}">
+                <img class="videos" src="{{url_for('static',filename='images/videos.jpg')}}">  
+                </a>
+            </div>
+            <div class="c">
+                {% block body %}
+                {% endblock %}
+            </div>
+          </div>
+        
+    </body>
+
+</html>

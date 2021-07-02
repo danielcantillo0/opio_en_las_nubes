@@ -1,0 +1,141 @@
+html, body {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "a a a a" "b c c c" "b c c c";
+}
+
+.a { 
+    grid-area: a;
+    flex-grow: 1;
+    display: flex;
+    height: 15vh;
+    width: auto;
+    padding: 80px;
+ }
+
+.b { 
+    
+    grid-area: b;
+    flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+    height:100vh;
+    
+ }
+
+.c { 
+    grid-area: c;
+    flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+    height:100vh; }
+.titulo {
+    
+    position: relative;
+    top: -20vh;
+    object-fit: contain;
+    max-width: 100%;
+    width: 175vh;
+    height: 60vh;
+    mix-blend-mode: multiply;
+}
+.gifs {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+  width: 25vh;
+  height: 25vh;
+  mix-blend-mode: multiply;
+
+
+}
+.textos {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+  width: 25vh;
+  height: 25vh;
+  mix-blend-mode: multiply;
+  
+  
+
+}
+.autor {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+  width: 25vh;
+  height: 25vh;
+  mix-blend-mode: multiply;
+  
+  
+
+}
+.home {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+  width: 25vh;
+  height: 25vh;
+  mix-blend-mode: multiply;
+  
+  
+
+
+}
+.imagenes {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+  width: 25vh;
+  height: 25vh;
+  mix-blend-mode: multiply;
+  
+  
+
+}
+.musica {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+  width: 25vh;
+  height: 25vh;
+  mix-blend-mode: multiply;
+  
+  
+
+}
+
+.videos {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+  width: 25vh;
+  height: 25vh;
+  mix-blend-mode: multiply;
+  
+  
+
+}
+.index{
+  position: relative;
+  left: 50vh ;
+}
+.texto1{
+  object-fit: contain;
+  max-width: 100%;
+  mix-blend-mode: multiply;
+}
